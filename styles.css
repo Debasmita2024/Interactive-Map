@@ -1,0 +1,122 @@
+/* Modern Glassmorphism Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Header Styling */
+h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 20px 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Control Panel (Glassmorphism Effect) */
+.controls {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 90%;
+    max-width: 600px;
+}
+
+/* Input Styling */
+#search {
+    padding: 12px;
+    width: 220px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+    outline: none;
+    transition: 0.3s;
+}
+
+#search:focus {
+    background: rgba(255, 255, 255, 1);
+}
+
+/* Button Styling */
+button {
+    padding: 12px 18px;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#search-btn {
+    background: #ff6b6b;
+    color: white;
+}
+
+#locate-btn {
+    background: #28a745;
+    color: white;
+}
+
+#clear-markers {
+    background: #ffc107;
+    color: black;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+/* Select Dropdown Styling */
+#map-style {
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+    transition: 0.3s;
+}
+
+#map-style:focus {
+    background: rgba(255, 255, 255, 1);
+}
+
+/* Map Container */
+#map {
+    width: 90%;
+    height: 500px;
+    max-width: 1200px;
+    border-radius: 15px;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .controls {
+        flex-direction: column;
+        width: 95%;
+    }
+    
+    #search {
+        width: 90%;
+    }
+}
